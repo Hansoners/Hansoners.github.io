@@ -1,0 +1,18 @@
+img {
+  border-radius: 50%;
+  width: 200px;
+}
+
+.card-container {
+  justify-content: center;
+}
+
+.card-container nb-card {
+  float: left;
+  margin-right: 10px;
+  max-width: 80%;
+}
+
+ul {
+  display: inline;
+}
