@@ -1,44 +1,76 @@
+<div class="container">
+  <div class="inner-container">
+    <nb-layout>
+      <nb-layout-header>
+        <ul>
+          <ul>Hanson Chen</ul>
+          <ul>
+            <nb-icon icon="github"></nb-icon>
+          </ul>
+          <ul>
+            <nb-icon icon="linkedin"></nb-icon>
+          </ul>
+        </ul>
 
-<nb-layout>
+      </nb-layout-header>
+      <nb-layout-column class="colored-column-basic">
 
-  <nb-layout-header>
-   <ul>
-     <ul>Hanson Chen</ul>
-     <ul><nb-icon icon="github"></nb-icon></ul>
-     <ul><nb-icon icon="linkedin"></nb-icon></ul>
-   </ul>
+        <div class="project-wrapper">
+          <div class="inner-project-wrapper">
+        <div class="card-container">
+          <nb-card size="small" id="hello-card">
+            <nb-card-header>Hello 👋</nb-card-header>
+            <nb-card-body>
+              <img src="assets/profile.png">
+              <p>Welcome to my website.</p>
+            </nb-card-body>
+          </nb-card>
 
-  </nb-layout-header>
-  <nb-layout-column class="colored-column-basic">
+          <nb-card id="about-card" size="small">
+            <nb-card-header>About Me</nb-card-header>
+            <nb-card-body>
+              <p>Donald John Trump is the 45th and current president of the United States. Before entering politics, he
+                was
+                a businessman and television personality. Trump was born and raised in Queens, a borough of New York
+                City,
+                and received a bachelor's degree in economics from the Wharton School.</p>
+            </nb-card-body>
+          </nb-card>
 
-    <div class="card-container">
-    <nb-card size="small">
-      <nb-card-header>Hello 👋</nb-card-header>
-      <nb-card-body>
-        <img src="assets/profile.png">
-        <p>Welcome to my website.</p>
-      </nb-card-body>
-    </nb-card>
 
-    <nb-card size="small">
-      <nb-card-header>About Me</nb-card-header>
-      <nb-card-body>
-        <p>Donald John Trump is the 45th and current president of the United States. Before entering politics, he was a businessman and television personality. Trump was born and raised in Queens, a borough of New York City, and received a bachelor's degree in economics from the Wharton School.</p>
-      </nb-card-body>
-    </nb-card>
 
-    <nb-card size="small">
-      <nb-card-header>Projects</nb-card-header>
-      <nb-card-body>
-        <p>Donald John Trump is the 45th and current president of the United States. Before entering politics, he was a businessman and television personality. Trump was born and raised in Queens, a borough of New York City, and received a bachelor's degree in economics from the Wharton School.</p>
-      </nb-card-body>
-    </nb-card>
+              <h1>Projects</h1>
+              <nb-card id="project-card" size="small" *ngFor="let project of projects">
+                <nb-card-header>{{project.title}}</nb-card-header>
+                <nb-card-body>
+                  <img src="assets/profile.png">
+                  <p>{{project.desc}}</p>
+                </nb-card-body>
+              </nb-card>
+            </div>
+          </div>
 
+        </div>
+      </nb-layout-column>
+
+
+      <nb-layout-footer>
+        <ul>
+          <ul class="hvr-icon-rotate">
+            <nb-icon icon="github"></nb-icon>
+          </ul>
+          <ul>
+            <nb-icon icon="linkedin"></nb-icon>
+          </ul>
+          <ul>
+            <nb-icon icon="phone"></nb-icon>
+          </ul>
+          <ul>
+            <nb-icon icon="email"></nb-icon>
+          </ul>
+        </ul>
+      </nb-layout-footer>
+    </nb-layout>
   </div>
 
-
-
-
-  </nb-layout-column>
-  <nb-layout-footer>Contact us</nb-layout-footer>
-</nb-layout>
+</div>
