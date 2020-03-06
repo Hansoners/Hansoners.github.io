@@ -1,76 +1,99 @@
-<div class="container">
-  <div class="inner-container">
-    <nb-layout>
-      <nb-layout-header>
-        <ul>
-          <ul>Hanson Chen</ul>
-          <ul>
-            <nb-icon icon="github"></nb-icon>
-          </ul>
-          <ul>
-            <nb-icon icon="linkedin"></nb-icon>
-          </ul>
-        </ul>
+<nb-layout>
+  <nb-layout-header>
+    <ul id="header-icons">
+      <ul>
+        <nb-icon class="hvr-grow-rotate" icon="github"></nb-icon>
+      </ul>
+      <ul>
+        <nb-icon class="hvr-grow-rotate" icon="linkedin"></nb-icon>
+      </ul>
+      <ul>
+        <nb-icon class="hvr-grow-rotate" icon="phone"></nb-icon>
+      </ul>
+      <ul>
+        <nb-icon class="hvr-grow-rotate" icon="email"></nb-icon>
+      </ul>
+    </ul>
 
-      </nb-layout-header>
-      <nb-layout-column class="colored-column-basic">
-
-        <div class="project-wrapper">
-          <div class="inner-project-wrapper">
+  </nb-layout-header>
+  <nb-layout-column class="colored-column-basic">
+    <div class="project-wrapper">
+      <div class="inner-project-wrapper">
         <div class="card-container">
-          <nb-card size="small" id="hello-card">
-            <nb-card-header>Hello 👋</nb-card-header>
+          <nb-card accent="primary" size="small" id="hello-card">
+            <nb-card-header>Hanson Chen
+            </nb-card-header>
             <nb-card-body>
-              <img src="assets/profile.png">
-              <p>Welcome to my website.</p>
+              <img id="profile" class="hvr-float" src="assets/profile.jpg">
+              <p>Welcome 🙌</p>
+            </nb-card-body>
+          </nb-card>
+          <nb-card accent="primary" id="about-card" size="small">
+            <nb-card-header>🎓About Me</nb-card-header>
+            <nb-card-body>
+              <p>
+                {{aboutMeDesc}}
+              </p>
+              <div class="hvr-grow"><button nbButton status="primary">
+                <nb-icon icon="eye-outline"></nb-icon>Resume
+              </button></div>
+              <p>Open to 2020 internships ✌️</p>
+              <div class="hvr-grow"><button nbButton status="secondary">
+                  <nb-icon icon="email-outline"></nb-icon>Contact
+                </button></div>
             </nb-card-body>
           </nb-card>
 
-          <nb-card id="about-card" size="small">
-            <nb-card-header>About Me</nb-card-header>
-            <nb-card-body>
-              <p>Donald John Trump is the 45th and current president of the United States. Before entering politics, he
-                was
-                a businessman and television personality. Trump was born and raised in Queens, a borough of New York
-                City,
-                and received a bachelor's degree in economics from the Wharton School.</p>
-            </nb-card-body>
-          </nb-card>
 
 
+          <h1>Projects</h1>
 
-              <h1>Projects</h1>
-              <nb-card id="project-card" size="small" *ngFor="let project of projects">
-                <nb-card-header>{{project.title}}</nb-card-header>
+          <nb-flip-card *ngFor="let project of projects">
+            <nb-card-front>
+              <nb-card id="project-card" size="small">
+                <nb-card-header>
+                  <nb-icon class="hvr-grow-rotate" icon="github"></nb-icon>
+                  {{project.title | titlecase}}
+                </nb-card-header>
                 <nb-card-body>
-                  <img src="assets/profile.png">
+                  <img class="hvr-rotate" src={{project.img}}>
                   <p>{{project.desc}}</p>
                 </nb-card-body>
               </nb-card>
-            </div>
-          </div>
-
+            </nb-card-front>
+            <nb-card-back>
+              <nb-card id="project-card" size="small">
+                <nb-card-header>
+                  <nb-icon class="hvr-grow-rotate" icon="github"></nb-icon>
+                  Description
+                </nb-card-header>
+                <nb-card-body>
+                  <p>{{project.fullDesc}}</p>
+                </nb-card-body>
+              </nb-card>
+            </nb-card-back>
+          </nb-flip-card>
         </div>
-      </nb-layout-column>
+      </div>
+    </div>
+
+  </nb-layout-column>
 
 
-      <nb-layout-footer>
-        <ul>
-          <ul class="hvr-icon-rotate">
-            <nb-icon icon="github"></nb-icon>
-          </ul>
-          <ul>
-            <nb-icon icon="linkedin"></nb-icon>
-          </ul>
-          <ul>
-            <nb-icon icon="phone"></nb-icon>
-          </ul>
-          <ul>
-            <nb-icon icon="email"></nb-icon>
-          </ul>
-        </ul>
-      </nb-layout-footer>
-    </nb-layout>
-  </div>
-
-</div>
+  <nb-layout-footer>
+    <ul id="footer-icons">
+      <ul>
+        <nb-icon class="hvr-grow-rotate" icon="github"></nb-icon>
+      </ul>
+      <ul>
+        <nb-icon class="hvr-grow-rotate" icon="linkedin"></nb-icon>
+      </ul>
+      <ul>
+        <nb-icon class="hvr-grow-rotate" icon="phone"></nb-icon>
+      </ul>
+      <ul>
+        <nb-icon class="hvr-grow-rotate" icon="email"></nb-icon>
+      </ul>
+    </ul>
+  </nb-layout-footer>
+</nb-layout>

@@ -3,45 +3,45 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss',
+   'hover-min.css']
 })
 export class AppComponent implements OnInit {
 
-  title = 'portfolio';
+  aboutMeDesc: string;
   projects = [];
 
   ngOnInit(): void {
     this.projects = [
       {
         title: 'Reddit Clone',
-        desc: 'full-stack Reddit clone made with Angular & Spring',
+        desc: 'Full-stack Reddit clone developed with Angular & Spring',
         fullDesc: '',
-        img: '',
+        img: 'assets/reddit.jpg',
         link: '',
       },
       {
         title: 'Twitter Stock Trading Bot',
         desc: 'Stock trading bot using sentiment analysis on tweets by the US President',
         fullDesc: '',
-        img: '',
+        img: 'assets/trump.jpg',
         link: '',
       },
       {
         title: 'Pokédex Chatbot',
         desc: 'Full-stack conversational experience using natural language processing',
         fullDesc: '',
-        img: '',
+        img: 'assets/pikachu.jpg',
         link: '',
       },
       {
         title: 'Popular Movies App',
         desc: 'Android app to discover popular movies, watch trailers, and read reviews',
         fullDesc: '',
-        img: '',
+        img: 'assets/bossbaby.png',
         link: '',
       },
     ];
-
-    console.log(this.projects);
+    this.aboutMeDesc = 'I am a fourth year computer science and business administration student at the University of Waterloo and Wilfrid Laurier University.';
   }
 }
