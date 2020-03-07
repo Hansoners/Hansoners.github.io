@@ -9,6 +9,10 @@ export class AppComponent implements OnInit {
 
   aboutMeDesc: string;
   projects = [];
+  github: string;
+  linkedin: string;
+  email: string;
+  phone: string;
 
   ngOnInit(): void {
     this.projects = [
@@ -42,5 +46,9 @@ export class AppComponent implements OnInit {
       },
     ];
     this.aboutMeDesc = 'I am a fourth year computer science and business administration student at the University of Waterloo and Wilfrid Laurier University.';
+    this.github = 'https://www.github.com/hansoners';
+    this.linkedin = 'https://www.linkedin.com/in/hansoners/';
+    this.email = 'hglchen@edu.uwaterloo.ca';
+    this.phone = '6473901392';
   }
 }

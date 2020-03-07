@@ -49,8 +49,8 @@ p {
 
 #project-card, nb-flip-card {
   float: left;
-  width: 300px;
-  height: 400px;
+  width: 320px;
+  height: 420px;
 }
 
 nb-card {
@@ -78,6 +78,14 @@ nb-card {
 
 #badge {
   display: inline-block;
+}
+
+#footer-icons nb-icon {
+  color: black;
+}
+
+#footer-icons nb-icon:hover {
+  color: #3366ff;
 }
 
 .hvr-grow-rotate {
