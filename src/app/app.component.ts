@@ -26,7 +26,7 @@ export class AppComponent implements OnInit {
       {
         title: 'Twitter Stock Trading Bot',
         desc: 'Stock trading bot using sentiment analysis on tweets by the US President',
-        fullDesc: '',
+        fullDesc: 'This was a fun little experimental project to analyze tweets from the POTUS with Google\'s Cloud Natural Language API. Based on the sentiment value of tweets mentioning companies in the S&P100, the bot would \'trade\' 1 share through either a long or short position. The bot compares the opening and closing price of the stock and calculates profit/losses based on the position.',
         img: 'assets/trump.jpg',
         link: 'https://github.com/Hansoners/twitter-stock-bot',
       },
