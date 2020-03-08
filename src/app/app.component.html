@@ -63,7 +63,7 @@
             <nb-card-front>
               <nb-card id="project-card" size="small">
                 <nb-card-header>
-                  <nb-icon class="hvr-grow-rotate" icon="github"></nb-icon>
+                  <a target="_blank" rel="noopener" href={{project.link}}><nb-icon class="hvr-grow-rotate" icon="github"></nb-icon></a>
                   {{project.title | titlecase}}
                 </nb-card-header>
                 <nb-card-body>
@@ -75,7 +75,7 @@
             <nb-card-back>
               <nb-card id="project-card" size="small">
                 <nb-card-header>
-                  <nb-icon class="hvr-grow-rotate" icon="github"></nb-icon>
+                  <a target="_blank" rel="noopener" href={{project.link}}><nb-icon class="hvr-grow-rotate" icon="github"></nb-icon></a>
                   Description
                 </nb-card-header>
                 <nb-card-body>

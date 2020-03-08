@@ -21,28 +21,28 @@ export class AppComponent implements OnInit {
         desc: 'Full-stack Reddit clone developed with Angular & Spring',
         fullDesc: '',
         img: 'assets/reddit.jpg',
-        link: '',
+        link: 'https://github.com/Hansoners/reddit-spring-clone',
       },
       {
         title: 'Twitter Stock Trading Bot',
         desc: 'Stock trading bot using sentiment analysis on tweets by the US President',
         fullDesc: '',
         img: 'assets/trump.jpg',
-        link: '',
+        link: 'https://github.com/Hansoners/twitter-stock-bot',
       },
       {
         title: 'Pokédex Chatbot',
-        desc: 'Full-stack conversational experience using natural language processing',
+        desc: 'Full-stack conversational experience using natural language processing with Dialogflow',
         fullDesc: '',
         img: 'assets/pikachu.jpg',
-        link: '',
+        link: 'https://github.com/Hansoners/pokemon-chatbot',
       },
       {
         title: 'Popular Movies App',
         desc: 'Android app to discover popular movies, watch trailers, and read reviews',
         fullDesc: '',
         img: 'assets/bossbaby.png',
-        link: '',
+        link: 'https://github.com/Hansoners/PopularMovies',
       },
     ];
     this.aboutMeDesc = 'I am a fourth year computer science and business administration student at the University of Waterloo and Wilfrid Laurier University.';
