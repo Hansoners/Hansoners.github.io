@@ -32,7 +32,7 @@ export class ChatComponent implements OnInit {
       API_URL,
       {
         lang: 'en',
-        query: 'activate API',
+        query: 'photo pikachu',
         sessionId: '12345',
         timezone: 'America/New_York'
       }, httpOptions
@@ -93,7 +93,7 @@ export class ChatComponent implements OnInit {
       )
 
         .subscribe(res => {
-          console.log(res);
+
           if (res.result.fulfillment.data && res.result.fulfillment.data.is_image === true) {
             const files = [];
             files.push({
