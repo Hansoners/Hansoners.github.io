@@ -1,20 +1,16 @@
-<nb-chat title="Poké Bot" size="large">
 
-  <nb-chat-message *ngFor="let msg of messages"
-                   [type]="msg.type"
-                   [message]="msg.text"
-                   [reply]="msg.reply"
-                   [files]="msg.files"
-                   [sender]="msg.sender"
-                   [date]="msg.date"
-                   [avatar]="msg.avatar">
-  </nb-chat-message>
+<div class="container">
+  <nb-chat title="Poké Bot" size="large">
+    <nb-chat-message *ngFor="let msg of messages" [type]="msg.type" [message]="msg.text" [reply]="msg.reply"
+      [files]="msg.files" [sender]="msg.sender" [date]="msg.date" [avatar]="msg.avatar">
+    </nb-chat-message>
+    <nb-chat-form (send)="sendMessage($event)"></nb-chat-form>
+  </nb-chat>
+</div>
 
-  <!-- <nb-chat-message *ngIf="loading" [nbSpinner]="loading" nbSpinnerStatus="info" type="text" avatar="/assets/pikachu.jpg"
-    message="...">
-  </nb-chat-message> -->
-
-
-  <nb-chat-form (send)="sendMessage($event)"></nb-chat-form>
-
-</nb-chat>
+<div class="hvr-grow">
+  <a href='https://github.com/Hansoners/pokemon-chatbot'>
+    <button nbButton status="secondary">
+      <nb-icon icon="github"></nb-icon>Github
+    </button></a>
+</div>
