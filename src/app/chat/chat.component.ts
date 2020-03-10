@@ -105,7 +105,7 @@ export class ChatComponent implements OnInit {
             if (res.result.fulfillment.speech) {
               this.addBotMessage(res.result.fulfillment.speech);
             } else {
-              this.addBotMessage('Sorry, please wait a couple of seconds and try again 🥺🥺🥺');
+              this.addBotMessage('Sorry, please wait a couple of seconds and try again! It usually takes ~10 seconds for calls to the webhook to work due to hosting.');
             }
           }
           this.loading = false;
