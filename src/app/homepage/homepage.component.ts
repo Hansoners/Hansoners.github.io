@@ -17,7 +17,7 @@ export class HomepageComponent implements OnInit {
       {
         title: 'Reddit Clone',
         desc: 'Full-stack Reddit clone developed with Angular & Spring',
-        fullDesc: '',
+        fullDesc: 'This is an ongoing full stack project to further my understanding and experience with Java Spring.',
         img: 'assets/reddit.jpg',
         link: 'https://github.com/Hansoners/reddit-spring-clone',
       },
@@ -38,7 +38,7 @@ export class HomepageComponent implements OnInit {
       {
         title: 'Popular Movies App',
         desc: 'Android app to discover popular movies, watch trailers, and read reviews',
-        fullDesc: '',
+        fullDesc: 'I started this project after following the Udacity Android Developer Nanodegree course. Through this project I learned the fundamentals of Android development and how to build clean and usable UIs using Material components. I also learned how to fetch data from APIs in Android and optimize views for various devices.',
         img: 'assets/bossbaby.png',
         link: 'https://github.com/Hansoners/PopularMovies',
       },
