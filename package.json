@@ -23,6 +23,8 @@
     "@nebular/bootstrap": "^4.6.0",
     "@nebular/eva-icons": "4.6.0",
     "@nebular/theme": "^4.6.0",
+    "lottie-web": "^5.7.3",
+    "ngx-lottie": "^6.4.0",
     "bootstrap": "^4.4.1",
     "eva-icons": "^1.1.2",
     "hover.css": "^2.3.2",
