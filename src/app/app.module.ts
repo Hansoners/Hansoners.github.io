@@ -14,6 +14,8 @@ import { ChatComponent } from './chat/chat.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { LottieModule } from 'ngx-lottie';
 import player from 'lottie-web/build/player/lottie_svg';
+import { AngularTypewriterEffectModule } from 'angular-typewriter-effect';
+import {NgxTypedJsModule} from 'ngx-typed-js';
 
 export function playerFactory() {
   return player;
@@ -29,18 +31,14 @@ export function playerFactory() {
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NbThemeModule.forRoot({ name: 'default' }),
-    LottieModule.forRoot({ player: playerFactory, useCache: true }),
-    NbLayoutModule,
-    NbEvaIconsModule,
-    NbCardModule,
     NbIconModule,
     NbButtonModule,
     NbBadgeModule,
     NbChatModule,
     HttpClientModule,
-    NbSpinnerModule
-
+    NbSpinnerModule,
+    AngularTypewriterEffectModule,
+    NgxTypedJsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
