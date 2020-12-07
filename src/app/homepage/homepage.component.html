@@ -1,5 +1,10 @@
-<div class="container">
-  <ngx-typed-js [strings]=list [typeSpeed]="60" [backSpeed]="25" [startDelay]="1000" [loop]="true">
-    <h1 class="typing"></h1>
-  </ngx-typed-js>
+<div class="rain-container">
+  <ng-container *ngFor="let i of [].constructor(250)">
+    <div class="rain"></div>
+  </ng-container>
+  <div class="container">
+    <ngx-typed-js [strings]=list [typeSpeed]="60" [backSpeed]="25" [startDelay]="1000" [loop]="true">
+      <h1 class="typing"></h1>
+    </ngx-typed-js>
+  </div>
 </div>

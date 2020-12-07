@@ -15,8 +15,8 @@ var HomepageComponent = /** @class */ (function () {
             'Software Developer Intern @ Magnet Forensics | Fall \'20',
             'Software Developer Intern @ RBC Financial Group | Winter \'20',
             'Software Developer Intern @ RBC Financial Group | Winter \'19',
-            'Bachelor of Computer Science @ University of Waterloo \'21',
-            'Bachelor of Business Administration @ Wilfrid Laurier University \'21'
+            'BCS @ University of Waterloo \'21',
+            'BBA @ Wilfrid Laurier University \'21'
         ];
     }
     HomepageComponent.prototype.ngOnInit = function () {

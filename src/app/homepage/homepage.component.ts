@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { AnimationOptions } from 'ngx-lottie';
 
 @Component({
   selector: 'app-homepage',
@@ -7,7 +6,6 @@ import { AnimationOptions } from 'ngx-lottie';
   styleUrls: ['./homepage.component.scss']
 })
 export class HomepageComponent implements OnInit {
-
   list = ['Hanson Chen',
   'Incoming SDE Intern @ Amazon | Summer \'21',
   'Software Developer Intern @ Magnet Forensics | Fall \'20',
