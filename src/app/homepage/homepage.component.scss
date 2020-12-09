@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://db.onlinewebfonts.com/c/7bc71114a54a06cbaf716a3264b70bd6?family=Arcade+Classic');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 .container {
     position: fixed;
@@ -50,10 +50,10 @@
 }
 
 p {
-    font-family: Arcade Classic;
+    font-family: 'Press Start 2P';
     font-weight: bold;
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     animation: glitch 4s steps(100) infinite;
 
     @keyframes glitch {
