@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('//db.onlinewebfonts.com/c/7bc71114a54a06cbaf716a3264b70bd6?family=Arcade+Classic');
 
 .container {
     position: fixed;
     top: 50%;
     left: 50%;
+    width: fit-content;
     transform: translate(-50%, -50%);
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
     background-color: transparent;
 }
 
@@ -49,10 +50,10 @@
 }
 
 p {
-    font-family: sans-serif;
+    font-family: Arcade Classic;
     font-weight: bold;
     color: white;
-    font-size: 2.5rem;
+    font-size: 2rem;
     animation: glitch 4s steps(100) infinite;
 
     @keyframes glitch {
